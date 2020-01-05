@@ -49,21 +49,21 @@ int check_push_param(char *param)
   */
 int check_digits(char *s)
 {
-    int status = 1;
-    
-    while (*s != '\0')
-    {
-        if (s[0] == 45)
-            continue;
-        
-        if (isdigit(*s) == 0)
-        {
-            status = 0;
-            return (status);
-        }
-        
-        ++s;
-    }
-    
-    return (status);
+	int status = 1;
+
+	while (*s != '\0')
+	{
+		if (s[0] == 45)
+			continue;
+
+		if (isdigit(*s) == 0)
+		{
+			status = 0;
+			return (status);
+		}
+
+		++s;
+	}
+
+	return (status);
 }
