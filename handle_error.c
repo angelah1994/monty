@@ -13,8 +13,10 @@ void handle_error(int errno, char *opcode, unsigned int line, char *buff)
 {
 	if (errno >= 100 && errno < 200)
 		handle_cerror(errno, opcode, line);
-	else if (errno >= 200 && errno < 300)
+	else if (errno >= 200 && errno <= 210)
 		handle_uerror(errno, line);
+	else if (errno >= 211 && errno <= 220)
+		handle_more_uerror(errno, line);
 	else
 		return;
 
@@ -92,6 +94,28 @@ void handle_uerror(int errno, unsigned int line)
 			break;
 		case ERR_MOD_USG:
 			fprintf(stderr, "L%d: can't mod, stack too short\n", line);
+			break;
+		default:
+			break;
+	}
+}
+
+/**
+  * handle_more_uerror - ...
+  * @errno: ...
+  * @line: ...
+  *
+  * Return: Nothing
+  */
+void handle_more_uerror(int errno, unsigned int line)
+{
+	switch (errno)
+	{
+		case ERR_PCH_USG:
+			fprintf(stderr, "L%d: can't pchar, value out of range\n", line);
+			break;
+		case ERR_PCH_EMP:
+			fprintf(stderr, "L%d: can't pchar, stack empty\n", line);
 			break;
 		default:
 			break;
