@@ -54,7 +54,10 @@ int check_digits(char *s)
 	while (*s != '\0')
 	{
 		if (s[0] == 45)
+		{
+			++s;
 			continue;
+		}
 
 		if (isdigit(*s) == 0)
 		{
