@@ -16,11 +16,10 @@ void pstr(stack_t **stack, unsigned int line_number)
 	{
 		if (curr->n == 0 || curr->n < 0 || curr->n > 127)
 			break;
-		else
-			printf("%c", curr->n);
 
+		printf("%c", curr->n);
 		curr = curr->next;
 	}
 
 	printf("\n");
-}	
+}
