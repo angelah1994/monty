@@ -1,17 +1,12 @@
 #ifndef _MONTY_
 #define _MONTY_
 
-/* Constants */
 #define SUCSS_OP		0
 #define VALID_PARM		0
 #define MIN_ARGS		2
-
-/* Common Errors */
 #define ERR_BAD_INST	100
 #define ERR_BAD_MALL	101
 #define ERR_INVLD_PARM	102
-
-/* Usage Errors */
 #define ERR_ARG_USG		200
 #define ERR_PUSH_USG	201
 #define ERR_PINT_USG	202
