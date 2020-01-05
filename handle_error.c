@@ -8,7 +8,7 @@
   *
   * Return: Nothing
   */
-void handle_error(int errno, char *opcode, unsigned int line)
+void handle_error(int errno, char *opcode, unsigned int line, char *buff)
 {
 	if (errno >= 100 && errno < 200)
 		handle_cerror(errno, opcode, line);
@@ -18,6 +18,10 @@ void handle_error(int errno, char *opcode, unsigned int line)
 		return;
 
 	frees_stack();
+
+	if (buff)
+		free(buff);
+
 	exit(EXIT_FAILURE);
 }
 

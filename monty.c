@@ -39,7 +39,7 @@ int main(int argn, char *args[])
 			if (op_status >= 100)
 			{
 				fclose(fd);
-				handle_error(op_status, op_code, line_num);
+				handle_error(op_status, op_code, line_num, buff);
 			}
 		}
 
