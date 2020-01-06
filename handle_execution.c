@@ -5,6 +5,7 @@
   * @op_code: The operation code to manage
   * @op_param: The parameter of the instruction
   * @line: The line on which the error occurred
+  * @m: The method to be used by the interpreter
   *
   * Return: 0 if the operation was executed correctly or errcode if is invalid
   */
