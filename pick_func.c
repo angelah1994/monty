@@ -11,6 +11,7 @@ void (*pick_func(char *s))(stack_t **, unsigned int)
 {
 	instruction_t insts[] = {
 		{ "push", push },
+		{ "push_queue", push_queue },
 		{ "pall", pall },
 		{ "pint", pint },
 		{ "pop", pop },
