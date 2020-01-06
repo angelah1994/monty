@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * add - Prints all the elements of the stack
- * @stack: The stack to print
- * @line_number: ...
+ * add - Adds the top two elements of the stack
+ * @stack: The head of the stack
+ * @line_number: The line on which the error occurred
  *
  * Return: Nothing
  */

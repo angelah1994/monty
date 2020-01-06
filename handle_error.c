@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
-  * handle_error - ...
-  * @errno: ...
-  * @opcode: ...
-  * @line: ...
-  * @buff: ...
+  * handle_error - Manages the printing of interpreter errors
+  * @errno: The error code to manage
+  * @opcode: The operation code to manage
+  * @line: The line on which the error occurred
+  * @buff: The reserved error line buffer
   *
   * Return: Nothing
   */
@@ -29,10 +29,10 @@ void handle_error(int errno, char *opcode, unsigned int line, char *buff)
 }
 
 /**
-  * handle_cerror - ...
-  * @errno: ...
-  * @opcode: ...
-  * @line: ...
+  * handle_cerror - Manages common interpreter errors
+  * @errno: The error code to manage
+  * @opcode: The operation code to manage
+  * @line: The line on which the error occurred
   *
   * Return: Nothing
   */
@@ -52,9 +52,9 @@ void handle_cerror(int errno, char *opcode, unsigned int line)
 }
 
 /**
-  * handle_uerror - ...
-  * @errno: ...
-  * @line: ...
+  * handle_uerror - Manages interpreter usage errors
+  * @errno: The error code to manage
+  * @line: The line on which the error occurred
   *
   * Return: Nothing
   */
@@ -101,9 +101,9 @@ void handle_uerror(int errno, unsigned int line)
 }
 
 /**
-  * handle_more_uerror - ...
-  * @errno: ...
-  * @line: ...
+  * handle_more_uerror - Manages interpreter usage errors
+  * @errno: The error code to manage
+  * @line: The line on which the error occurred
   *
   * Return: Nothing
   */

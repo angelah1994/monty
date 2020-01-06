@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
-  * rotl - ...
-  * @stack: ...
-  * @line_number: ...
+  * rotl - Rotates the stack to the top
+  * @stack: The head of the stack
+  * @line_number: The line on which the error occurred
   *
-  * Return: ...
+  * Return: Nothing
   */
 void rotl(stack_t **stack, unsigned int line_number)
 {

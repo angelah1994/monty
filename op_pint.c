@@ -1,9 +1,10 @@
 #include "monty.h"
 
 /**
- * pint - ...
- * @stack: The stack to ...
- * @line_number: ...
+ * pint - Prints the value at the top of the stack,
+ * followed by a new line.
+ * @stack: The head of the stack
+ * @line_number: The line on which the error occurred
  *
  * Return: Nothing
  */

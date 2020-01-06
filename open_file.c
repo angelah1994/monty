@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
-  * open_file - ...
-  * @filename: ...
+  * open_file - Opens a file to interpret the commands within
+  * @filename: The file to be opened
   *
   * Return: The file descriptor of the opened file
   */

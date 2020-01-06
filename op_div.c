@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * divide - Prints all the elements of the stack
- * @stack: The stack to print
- * @line_number: ...
+ * divide - Divides the second top element by the top element of the stack
+ * @stack: The head of the stack
+ * @line_number: The line on which the error occurred
  *
  * Return: Nothing
  */

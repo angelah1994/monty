@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
-  * handle_execution - ...
-  * @op_code: ...
-  * @op_param: ...
-  * @line: ...
+  * handle_execution - Manages the operations to be executed by the interpreter
+  * @op_code: The operation code to manage
+  * @op_param: The parameter of the instruction
+  * @line: The line on which the error occurred
   *
-  * Return: Nothing
+  * Return: 0 if the operation was executed correctly or errcode if is invalid
   */
 int handle_execution(char *op_code, char *op_param, unsigned int line)
 {

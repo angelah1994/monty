@@ -1,9 +1,10 @@
 #include "monty.h"
 
 /**
- * pall - Prints all the elements of the stack
- * @stack: The stack to print
- * @line_number: ...
+ * pall - Prints all the values on the stack,
+ * starting from the top of the stack.
+ * @stack: The head of the stack
+ * @line_number: The line on which the error occurred
  *
  * Return: Nothing
  */

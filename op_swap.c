@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * swap - ...
- * @stack: The stack to ...
- * @line_number: ...
+ * swap - Swaps the top two elements of the stack
+ * @stack: The head of the stack
+ * @line_number: The line on which the error occurred
  *
  * Return: Nothing
  */

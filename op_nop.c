@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
-  * nop - ...
-  * @stack: ...
-  * @line_number: ...
+  * nop - Doesn’t do anything
+  * @stack: The head of the stack
+  * @line_number: The line on which the error occurred
   *
   * Return: Nothing
   */

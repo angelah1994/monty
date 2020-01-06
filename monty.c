@@ -3,11 +3,11 @@
 stack_t *head = NULL;
 
 /**
-  * main - The Monty entry point
+  * main - The Monty Interpreter entry point
   * @argn: The args number
   * @args: The args passed to the interpreter
   *
-  * Return: ...
+  * Return: Always zero
   */
 int main(int argn, char *args[])
 {

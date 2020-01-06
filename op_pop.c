@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * pop - ...
- * @stack: The stack to ...
- * @line_number: ...
+ * pop - Removes the top element of the stack
+ * @stack: The head of the stack
+ * @line_number: The line on which the error occurred
  *
  * Return: Nothing
  */

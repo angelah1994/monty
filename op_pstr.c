@@ -1,11 +1,12 @@
 #include "monty.h"
 
 /**
-  * pstr - ...
-  * @stack: ...
-  * @line_number: ...
+  * pstr - Prints the string starting at the top of the stack,
+  * followed by a new line
+  * @stack: The head of the stack
+  * @line_number: The line on which the error occurred
   *
-  * Return: ...
+  * Return: Nothing
   */
 void pstr(stack_t **stack, unsigned int line_number)
 {

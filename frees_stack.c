@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
-  * frees_stack - ...
+  * frees_stack - Releases all elements in the stack
   *
-  * Return: ...
+  * Return: Nothing
   */
 void frees_stack(void)
 {
